@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--purple300);
+    color: var(--body);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+ nav ul {
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+}
+
+nav ul li {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* nav ul li:hover {
+    border-bottom: 2px solid white;
+
+} */
+
+nav ul li a {
+    color: var(--body);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li.different {
+    border: none;
+    position: relative;
+}
+
+nav li.different:hover {
+    border: none;
+}
+
+nav li:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.different::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    transition: all ease-in-out .2s;
+}
+
+.different:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.hero-sec {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/hero_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.hero-content p {
+    font-size: 18px;
+
+}
+
+.music {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--purple500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.music-content h2 i {
+    font-size: 35px;
+    margin-right: 20px;
+
+}
+
+.music-content h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.music-content h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.music-content p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.music-content button {
+    padding: 15px 25px;
+    background-color: #dc0000;
+    color: white;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+    outline: none;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.music-content button:hover {
+    border: 2px solid #dc0000;
+    background-color: white;
+    color: #dc0000;
+}
+
+.music-content span {
+    display: block;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 45px;
+
+}
+
+.img-container {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+    z-index: 2;
+}
+
+.about-music {
+    /* min-height: 100vh; */
+    display: grid;
+    place-items: center;
+    color: black;
+    background-color: var(--body);
+    padding-top: 500px;
+    text-align: center;
+
+}
+
+
+.movie-content h2 {
+    margin-bottom: 50px;
+}
+
+.movie-content p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.movie-content button {
+    padding: 10px 25px;
+    background-color: var(--purple300);
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.movie-content button:hover {
+    background-color: transparent;
+    color: var(--purple300);
+    border: 2px solid var(--purple300);
+}
+
+.mac-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.video-sec {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/video.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.video-content h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.line {
+    border: none;
+    width: 100%;
+    border-top: 1px solid gray;
+    opacity: 0.5;
+    /* margin: 30px 0; */
+}
+
+.giftCard-sec {
+    padding: 80px 0;
+}
+
+.set-card {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    color: black;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+.card-content p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card-content span {
+    display: block;
+    font-weight: 400;
+}
+
+.card-content button {
+    display: 25px;
+    width: 200px;
+    padding: 10px 40px;
+    background-color: var(--purple300);
+    color: white;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.card-content button:hover {
+    background-color: transparent;
+    color: var(--purple300);
+    border: 2px solid var(--purple300);
+}
+
+footer {
+    background-color: var(--purple600);
+    padding: 50px 0;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*  */
+nav li.different {
+    border: none;
+    position: relative;
+}
+
+nav li.different:hover {
+    border: none;
+}
+
+nav li:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+/*  */
+
+.link-list li.list-head{
+    border: none;
+    position: relative;    
+}
+
+
+.link-list li.different:hover {
+    border: none;
+}
+
+.link-list h2{
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid transparent;   
+
+}
+
+.link-list h2:hover{
+    border-bottom: 2px solid #FFFF;   
+}
+
+
+
+.list-head::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: white;
+    transition: all ease-in-out .2s;
+}
+
+.list-head::after:hover {
+    width: 100%;
+}
+
+.link-list h2:hover{
+    cursor: context-menu;
+
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2px;
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.list li:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    left: 0;
+    
+}

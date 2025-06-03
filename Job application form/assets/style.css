@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-box {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 12px;
+}
+
+.sub-title {
+    font-size: 18px;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    margin: 4px;
+}
+
+input,
+textarea,
+select {
+    padding: 12px;
+    font-size: 15px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline-color: burlywood;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: coral;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    color: antiquewhite;
+    font-size: 18px;
+    transition: all 0.8s ease;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: coral;
+    cursor: pointer;
+}
+
+.textarea-control {
+    grid-column: 1/span 2;
+}
+
+.textarea-control textarea {
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+
+    .textarea-control {
+        grid-column: 1/span 1;
+    }
+}

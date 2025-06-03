@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        .banner {
+            width: 100%;
+            height: 250px;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        nav {
+            background: #222;
+            color: #fff;
+            padding: 12px 0;
+        }
+        nav .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        nav .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .about-section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+            margin-bottom: 32px;
+        }
+        .about-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .about-section p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .card-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card-content {
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Card Blog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="banner">
+        Welcome to Card Blog
+    </div>
+    <div class="container">
+        <section class="about-section">
+            <h2>About This Website</h2>
+            <p>
+                Card Blog is a sample website that demonstrates a modern card-based layout using HTML and CSS. Here, you can showcase posts, articles, or any content in a visually appealing card format. The site is fully responsive and easy to customize for your own projects.
+            </p>
+        </section>
+        <section class="cards">
+            <div class="card">
+                <div class="card-title">Getting Started with Cards</div>
+                <div class="card-content">
+                    Learn how to use card layouts to organize your content. Cards are flexible, easy to style, and look great on any device.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Responsive Design</div>
+                <div class="card-content">
+                    This website is fully responsive. The card layout adapts to different screen sizes, ensuring a great experience on mobile and desktop.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Easy Customization</div>
+                <div class="card-content">
+                    Change colors, fonts, and images to make this template your own. The clean code makes it simple to update and expand.
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Card Blog. All rights reserved.
+    </footer>
+</body>
+</html>
+  

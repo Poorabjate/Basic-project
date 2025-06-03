@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-baner {
+    min-height: 100vh;
+    background-image: url(./img/developer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* border: 0.5px solid white; */
+    /* border-top: none; */
+}
+
+.content {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.lg-title {
+    font-size: 72px;
+    font-weight: 300;
+}
+
+.sub-sec {
+    color: white;
+    background: #000;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.sub-sec h2 {
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.sub-head {
+    font-size: 96px;
+}
+
+.wrok-card {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    max-width: 320px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    height: 400px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.4);
+
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.bottom-sec {
+    display: flex;
+}
+
+.contact-sec {
+    background-color: #515603;
+}
+
+.about-sec {
+    background-color: #722300;
+}
+
+.about-sec,
+.contact-sec {
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+}
+
+.about-sec h2,
+.contact-sec h2 {
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.about-sec p,
+.contact-sec p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+footer h2 {
+    font-weight: 300;
+}
+
+@media(max-width: 768px) {
+    .main-baner {
+        min-height: 50vh;
+    }
+
+    .content {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .lg-title {
+        font-size: 32px;
+    }
+
+    .sub-sec h2 {
+        font-size: 22px;
+    }
+
+    .sub-head {
+        font-size: 32px;
+    }
+
+    .bottom-sec {
+        flex-direction: column;
+    }
+
+    .about-sec h2,
+    .contact-sec h2 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+}

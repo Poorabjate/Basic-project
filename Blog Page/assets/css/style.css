@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    padding: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+li i {
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    gap: 100px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    text-overflow: clip;
+    /* padding: 50px; */
+    line-height: 1;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.hero-content span {
+    display: block;
+}
+
+.hero-content p {
+    font-size: 30px;
+    color: #515a6d;
+    letter-spacing: 2px;
+
+}
+
+.hero-img {
+    float: right;
+}
+
+.hero-img img {
+    border-radius: 60px;
+    width: 580px;
+    height: auto;
+}
+
+.h-card {
+    display: flex;
+    margin: 2rem 1rem;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-btn {
+    all: unset;
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.read-btn:hover {
+    border-bottom: 1px solid #ccc;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.h-card{
+    display: flex;
+    gap: 20px;
+}
+
+.h-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.h-content p{
+    text-align: justify;
+}
